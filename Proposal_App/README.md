@@ -1,4 +1,4 @@
-# openit
+# Proposal App
 
 A new Flutter application.
 
