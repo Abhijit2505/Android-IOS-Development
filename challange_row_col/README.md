@@ -1,1 +1,1 @@
-A simple portfolio Application
+A simple portfolio Application made with Flutter and Dart
