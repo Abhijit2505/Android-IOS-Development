@@ -11,13 +11,14 @@ class myApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: Container(
-          padding: EdgeInsets.fromLTRB(0, 170, 0, 0),
+          padding: EdgeInsets.fromLTRB(0, 160, 0, 0),
           decoration: BoxDecoration(
-              gradient: LinearGradient(
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
-                  stops: [0.3, 1],
-                  colors: [Colors.red, Colors.orange])),
+            gradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                stops: [0.3, 1],
+                colors: [Colors.indigo[700], Colors.blue[200]]),
+          ),
           child: Column(
             children: <Widget>[
               CircleAvatar(
@@ -30,6 +31,7 @@ class myApp extends StatelessWidget {
                   fontFamily: 'CaveatBrush',
                   fontSize: 40.0,
                   color: Colors.white,
+                  fontWeight: FontWeight.w500,
                 ),
               ),
               SizedBox(
@@ -42,52 +44,52 @@ class myApp extends StatelessWidget {
                   fontSize: 15,
                   color: Colors.white,
                   letterSpacing: 2.0,
+                  fontWeight: FontWeight.w500,
                 ),
               ),
               SizedBox(
-                height: 15,
-              ),
-              Container(
-                padding: EdgeInsets.fromLTRB(70, 10, 20, 10),
-                color: Colors.white,
-                margin: EdgeInsets.fromLTRB(20, 10, 20, 10),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.phone,
-                    ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Text(
-                      '+91 7008187611',
-                      style: TextStyle(
-                        fontSize: 20,
-                      ),
-                    ),
-                  ],
+                height: 27,
+                width: 240,
+                child: Divider(
+                  color: Colors.white,
                 ),
               ),
-              Container(
-                  padding: EdgeInsets.fromLTRB(20, 10, 20, 10),
-                  color: Colors.white,
-                  margin: EdgeInsets.fromLTRB(20, 10, 20, 10),
-                  child: Row(
-                    children: <Widget>[
-                      Icon(
-                        Icons.email,
-                      ),
-                      SizedBox(
-                        width: 10.0,
-                      ),
-                      Text(
-                        "abhijittripathy99@gmail.com",
-                        style: TextStyle(
-                          fontSize: 17,
-                        ),
-                      ),
-                    ],
-                  ))
+              Card(
+                color: Colors.white,
+                margin: EdgeInsets.fromLTRB(20, 10, 20, 10),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.blue[900],
+                  ),
+                  title: Text(
+                    '+91 7008187611',
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.w500,
+                      color: Colors.black,
+                    ),
+                  ),
+                ),
+              ),
+              Card(
+                color: Colors.white,
+                margin: EdgeInsets.fromLTRB(20, 10, 20, 10),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.blue[900],
+                  ),
+                  title: Text(
+                    "abhijittripathy99@gmail.com",
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.w500,
+                      color: Colors.black,
+                    ),
+                  ),
+                ),
+              ),
             ],
           ),
         ),
